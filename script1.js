@@ -51,3 +51,13 @@ if (countryName1 === "Portugal" || countryName1 === "Brazil"
         alert("You don't speak Portuguese");
       }
 // ====================================================
+function canSpeakPortuguese() {
+        const countryName = prompt("What country are you from?");
+        if (countryName === "Portugal" || countryName === "Brazil") {
+          alert("You speak Portuguese!");
+        } else {
+          alert("Go learn Portuguese!");
+        }
+      }
+      canSpeakPortuguese();
+// ====================================================
