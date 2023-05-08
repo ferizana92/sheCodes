@@ -7,12 +7,27 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>sheCodes</h1>
+    <h2>
+      SheCodes is here to help provide women in developing countries and women
+      who are refugees with the opportunity to learn how to code for free.
+      SheCodes offers a solid introduction to product development, product
+      design and product management.
+    </h2>
+    <button>contact us!</button>
     <script>
-      const homeTown = prompt("please enter your home town!");
-      alert(homeTown);
-      const userName = prompt("What is your First name?");
-      const lastName = prompt("What is your Last name?");
-      alert("Your name is " + userName + lastName);
+      function contactUs() {
+        const name = prompt("What is your name?");
+        const age = prompt("How old are you?");
+        let h1 = document.querySelector("h1");
+        if (age >= 18) {
+          h1.innerHTML = "Hello " + name + ",welcome to sheCodes!";
+        } else {
+          h1.innerHTML = "Sorry! " + name + ",you can not apply to sheCodes!";
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", contactUs);
     </script>
   </body>
 </html>

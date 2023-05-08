@@ -61,3 +61,14 @@ function canSpeakPortuguese() {
       }
       canSpeakPortuguese();
 // ====================================================
+function contactUs() {
+        const name = prompt("what is your name?");
+        const email = prompt("what is your email?");
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "Thank you " + name + ",we`ll be in touch!";
+        // alert("Thank you " + name + ",we`ll be in touch!");
+      }
+
+      let contactButton = document.querySelector("button");
+contactButton.addEventListener("click", contactUs);
+// ====================================================
