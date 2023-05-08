@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Greek Yogurt 🥛</title>
     <style>
@@ -61,7 +60,9 @@
       .container {
         max-width: 600px;
         margin: 0 auto;
-        padding: 60px;
+      }
+      .buy-button {
+        text-align: center;
       }
     </style>
   </head>
@@ -72,7 +73,6 @@
       <img
         src="https://images.eatthismuch.com/site_media/img/254520_ldementhon_71b6a3e2-ec54-48c0-9ba3-73d8596244ae.png"
         alt="Greek Yogurt"
-        class="learn-more"
       />
       <p>
         Strained yogurt, Greek yogurt, yogurt cheese, or sack yoghurt is yogurt
@@ -95,5 +95,15 @@
         </a>
       </p>
     </div>
+    <script>
+      function Buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let emoji = prompt("What is your favorite emoji?");
+        alert("Thank you " + name + ", we will be in touch by email!" + emoji);
+      }
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", Buy);
+    </script>
   </body>
 </html>
