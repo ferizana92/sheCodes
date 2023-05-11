@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <style>
+      h1 {
+        font-size: 32px;
+        text-align: center;
+        color: white;
+      }
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        border: 1px solid white;
+        padding: 17px;
+        border-radius: 4px;
+        color: white;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        display: block;
+        line-height: 1.5;
+        font-size: 24px;
+        margin: 20px 0 10px;
+
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      }
+      button {
+        display: block;
+        background: rgba(0, 0, 0, 0.87);
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 30px auto;
+        transition: opacity 150ms ease;
+        cursor: pointer;
+        font-size: 40px;
+        border: none;
+        border-radius: 4px;
+        opacity: 1;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .learn-more {
+        display: block;
+        font-size: 15px;
+        margin-top: 12px;
+        text-decoration: none;
+        color: white;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        color: #fff;
+        background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+        border-radius: 10px;
+        width: 50%;
+        padding: 30px;
+        margin: 30px auto;
+      }
+      .try-button {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Yogurt</h1>
+      <h2>Especially Greek Yogurt</h2>
+      <hr />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhomHm0BIlEn4TfBbRJYgzjy-HN8tHtiVJY_n9onpNKAdj3mtog"
+        alt=""
+      />
+      <hr />
+      <p>
+        <strong>Greek yogurt</strong> is a yogurt that has been strained to
+        remove most of its whey, resulting in a thicker consistency than
+        unstrained yogurt, while preserving yogurt's distinctive sour taste.
+        Like many types of yogurt, strained yogurt is often made from milk that
+        has been enriched by boiling off some of its water content, or by adding
+        extra butterfat and powdered milk. In Europe and North America, it is
+        often made with low-fat or fat-free yogurt. In Iceland a similar product
+        named <em>skyr</em> is produced.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Strained_yogurt"
+        target="_blank"
+        class="learn-more"
+      >
+        Read on Wikipedia
+      </a>
+      <button class="try-button">👉 Try Greek Yogurt</button>
+    </div>
+    <script>
+      function Try() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let emoji = prompt("What is your favorite emoji?");
+        let age = prompt("How old are you?");
+        if (age >= 18) {
+          alert(
+            "Thank you " +
+              name +
+              ", we will be in touch. Meanwhile, have a lot of Yogurt!" +
+              emoji
+          );
+        } else {
+          alert("Sorry " + name + ", you can not buy!");
+        }
+      }
+      let tryButton = document.querySelector(".try-button");
+      tryButton.addEventListener("click", Try);
+    </script>
+  </body>
+</html>
