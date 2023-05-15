@@ -32,4 +32,8 @@ h3 {
 .cities {
     background: #fff;
     padding: 20px;
+    position: fixed;
+}
+.emojis{
+    position: absolute;
 }
