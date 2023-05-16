@@ -33,6 +33,8 @@ h3 {
     background: #fff;
     padding: 20px;
     position: fixed;
+    top: 0px;
+    right:0px;
 }
 .emojis{
     position: absolute;
