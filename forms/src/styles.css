@@ -16,6 +16,10 @@ h3 {
     color: #231d3c;
 }
 
+form {
+    margin: 20px 0;
+}
+
 .logo {
     display: block;
     margin: 30px auto;
