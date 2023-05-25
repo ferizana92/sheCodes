@@ -1,6 +1,26 @@
-let price = 4.5;
-console.log(Math.round(price));
-console.log(Math.ceil(price));
-console.log(Math.floor(price));
-console.log(Math.min(1.4,5,6.1));
-console.log(Math.max(1.4,5,6.1));
+let days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday","sunday" ];
+console.log(days);
+console.log(days[0]);
+console.log(days[6]);
+
+// Challenge 3
+
+days[6] = "Funday";
+console.log(days);
+
+// Challenge 4
+
+days.shift();
+days.shift();
+console.log(days);
+
+// Challenge 5
+days.forEach(function(day) {
+  console.log(`Temperature on ${day} is 18 degrees`);
+});
+
+// or
+function showDay(day) {
+  console.log(`Temperature on ${day} is 18 degrees`);
+}
+days.forEach(showDay);
