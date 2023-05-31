@@ -34,7 +34,7 @@ if (weather[city] !== undefined) {
   let fahrenheitTemperature = Math.round((temperature * 9) / 5 + 32);
 
   alert(
-    `It is currently ${celsiusTemperature}°C (${fahrenheitTemperature}°F) in ${city} with a humidity of ${humidity}%`
+    `It is currently ${celsiusTemperature}°C (${fahrenheitTemperature}°F) in ${city} with the humidity of ${humidity}%`
   );
 } else {
   alert(
