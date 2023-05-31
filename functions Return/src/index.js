@@ -16,3 +16,16 @@ function isWindy(speed) {
 // 3. Test both scenarios
 // isWindy(2, 'imperial') should return false
 // isWindy(20, 'metric') should return true
+function isWindy(speed, unit) {
+  if (speed > 5 && unit === "metric") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+if (isWindy(2, "imperial")) {
+  alert("It is windy");
+} else {
+  alert("It is not windy");
+}
