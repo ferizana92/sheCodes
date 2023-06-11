@@ -28,6 +28,13 @@
     <h3>JS Challenge 3</h3>
     <p>Log the first comment email from the API response</p>
 
-    <script src="src/index.js"></script>
+    <script src="src/index.js">
+      function showUser(response) {
+        alert(`The user name is ${response.data.name}`);
+      }
+
+      let url = "https://jsonplaceholder.typicode.com/users/1";
+      axios.get(url).then(showUser);
+    </script>
   </body>
 </html>
